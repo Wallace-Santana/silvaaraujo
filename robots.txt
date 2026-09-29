@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://silvaaraujoadvogados.com.br/sitemap.xml

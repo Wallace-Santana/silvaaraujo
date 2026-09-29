@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página não encontrada | Silva & Araújo Advogados</title>
+  <meta name="description" content="A página que você procurou não existe ou foi movida. Volte à página inicial ou fale conosco pelo WhatsApp." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0F0F0F" />
+
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <style>
+    .not-found {
+      min-height: calc(100vh - 76px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-9) var(--space-5);
+      text-align: center;
+      background: var(--color-ink);
+      color: var(--color-bg);
+      position: relative;
+      overflow: hidden;
+    }
+    .not-found::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url(/assets/img/selo-dourado.jpg) center/45% no-repeat;
+      opacity: 0.08;
+    }
+    .not-found-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 640px;
+    }
+    .not-found-code {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(6rem, 18vw, 12rem);
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+      color: var(--color-accent-light);
+      margin-bottom: var(--space-4);
+    }
+    .not-found h1 {
+      color: var(--color-bg);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      margin-bottom: var(--space-4);
+    }
+    .not-found p {
+      color: rgba(250, 250, 247, 0.75);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      max-width: 48ch;
+      margin: 0 auto var(--space-6);
+    }
+    .not-found-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+    }
+    .not-found-links {
+      margin-top: var(--space-7);
+      padding-top: var(--space-6);
+      border-top: 1px solid rgba(250, 250, 247, 0.12);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-5);
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+    .not-found-links a {
+      color: rgba(250, 250, 247, 0.7);
+      transition: color var(--dur) var(--ease);
+    }
+    .not-found-links a:hover { color: var(--color-accent-light); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <a href="/" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text"><span class="brand-name">Silva &amp; Araújo</span><span class="brand-sub">Advogados Associados</span></span>
+      </a>
+      <div class="nav-menu">
+        <a class="btn btn-primary" href="https://wa.me/5571996000692" target="_blank" rel="noopener">Fale conosco</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="not-found">
+    <div class="not-found-inner">
+      <div class="not-found-code" aria-hidden="true">404</div>
+      <h1>Página não encontrada.</h1>
+      <p>O endereço que você acessou não existe, foi movido ou o link está desatualizado. Volte à página inicial ou fale com a gente pelo WhatsApp.</p>
+
+      <div class="not-found-actions">
+        <a class="btn btn-wpp btn-large" href="https://wa.me/5571996000692" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a class="btn btn-ghost btn-large" style="color: #FAFAF7; border-color: rgba(250,250,247,0.4);" href="/">Voltar à página inicial</a>
+      </div>
+
+      <div class="not-found-links">
+        <a href="/consumidor">Direito do Consumidor</a>
+        <a href="/trabalhista">Direito Trabalhista</a>
+        <a href="/direito-previdenciario">Direito Previdenciário</a>
+        <a href="/#contato">Contato</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
